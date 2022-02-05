@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/identification.css"/>
+    <link rel="icon" type="ima/png" href="Logo/logo4.PNG/">
+    <script type="text/javascript" src="js/identification.js">
+	</script>
+    <title>Authentification</title>
+     
+</head>
+<body onload="document.getElementById('idLogin').focus()">
+    <header>
+        <img id ="idLogo" src="Logo/logo4.PNG"/>
+    </header>
+    <div id="zoneIdentification">
+        <form name="frmIdentification">
+            <p>
+                <label for="lblLogin" class="login">Login: </label>
+                <input type="text" id="idLogin" name="txtLogin" placeholder="xy@example.com" size="42" maxlength="20"/><br/>
+            </p>
+            <p>
+                <label for="lblPassword" class="pwd">Mot de passe: </label>
+                <input type="password" id="idPassword" name="txtPassword"size="42" maxlength="40"/>
+            </p><br/>
+            <p>
+                <input type="submit" value="Connexion" onclick="affichePageAccueil();" class="connexion">              
+            </p>
+            <p>
+                <label for="lblNouveauCompte" class="nouveauCompte">Vous etes un nouveau Client?<span id="idNouveauCompte"><a href="Inscription.html">Créer un nouveau compte</a></span> </label>
+            </p>
+        </form>
+       
+    </div>
+</body>
+</html>

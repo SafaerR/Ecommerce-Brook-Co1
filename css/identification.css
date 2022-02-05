@@ -1,0 +1,61 @@
+#idLogo{
+  background-color: white;
+  position: relative;
+    width: 30%;
+    left: 35%;
+    top: 40%;
+}
+#zoneIdentification{
+  position: relative;
+  text-align: center;
+}
+.login{
+  color: #137DC5;
+  font-size: 15pt;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  padding-right: 50px;
+}
+.pwd{
+  color: #137DC5;
+  font-size: 15pt;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  padding-right: 0px;
+}
+#idLogin{
+  height:30px;
+  border:#137DC5 1px solid;
+  width:26%;
+  margin-left: 0px;
+
+}
+#idPassword{
+  position: relative;
+  height:30px;
+  border:#137DC5 1px solid;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  margin-left: 10px;
+  width:26%;
+}
+.connexion{
+  background-color: #f3953e;
+  position: relative;
+  height:30px;
+  width:15%;
+  left: 50px;
+  top:0px;
+  text-align: center;
+  color: white;
+  font-size:13pt;
+  font-weight: bold;
+}
+.nouveauCompte{
+  position: relative;
+  left:60px;
+  font-size:11pt;
+  font-family: 'Segoe UI';
+  text-align: center;
+}

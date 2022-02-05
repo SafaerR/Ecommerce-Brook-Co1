@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livres</title>
+    <link rel="stylesheet" href="css/livres.css"/> 
+    <script type="text/javascript" src="js/livres.js"></script>
+</head>
+<body onload="masquerzoneContenuFacture();">
+    <div>
+        <a href="Accueil.html"><img src="Logo/logo4.PNG" class="logo"/></a>
+        <form class="barre_recherche">
+            <select id="choix_option">
+                <option value="0"> Choisissez une catégorie</option>
+                <option value="1"> Livres</option>
+                <option value="2"> Films</option>
+                <option value="3"> Jeux video</option>
+              </select>
+              <input type="text" id="idRecherche"placeholder="Mots clés" size="42" maxlength="40"/>
+              <input type="button" id="idGo" value="Go"/>
+          </form>
+        
+          <div id="idpanier" onclick = "afficherPanier();" ondblclick = "afficherZoneContenuItem();"> 
+            <img src="img/PANIER3.jpg" class="panier"/><span id="idItem">0</span> 
+        </div>
+        <a href="moncompte.html" class="compte" href="#">Mon compte</a>
+    </div>
+    
+ <!--   Menu de navigation -->          
+ <nav>
+    <ul class="menu">
+      <li>
+          <a href="Livres.html" >Livres</a>    
+      </li>
+      <li>
+          <a href="films.html">Films</a>
+      </li>
+      <li>
+          <a href="jeux.html">Jeux video</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+    </li>
+  </ul>
+    </nav>
+    <!--   sous-menu de navigation -->  
+<div id="zoneContenuItem">   
+    <div class="menu_vertical" id="idmenu_vert">
+        <p class="magasinecategorie"> Magasiner par catégorie</p>
+        <nav>
+            <ul class="sous_menu">
+            <li> Livres </li>
+            <li>
+                <a href="Livres.html">Informatique</a>
+            </li>
+            <li>
+                <a href="#">Littérature</a>
+            </li>
+            <li>
+                <a href="#">Géographie</a>
+            </li>
+        </ul>
+            </nav>
+        <p class="pubLivraison">Livraison rapide partout au Quebec</p>
+        <img src="img/banniere.PNG" class="banniere"/>
+    </div>
+    <!--insertion des images des livres--------------->    
+
+     
+            <table class="itemlivres">
+                <tr class="itemlivresligne1" >
+                    <td class="col">
+                        <a href="detail_livre.html"><img src="Livres/Informatique/1.jpg" class="image"  id="idImage" /></a>
+
+                        <p id="idTitreLivre">Windows10 pour les nuls</p>
+                        <p class="nomAuteur">Bernard JOLIVALT</p>
+                        <p class="format">Imprimé</p>
+                        <p class="prix">28.95$</p>
+                        <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/1.jpg  width=100 height=100></img>','Windows10 pour les nuls'+ '</br></br>'+'<span id=sAuteur>Bernard JOLIVALT</span></br></br>Posté d\'ici 10 à 20 jours' ,'1','28.95$');"/>
+                    </td>
+                    <td class="col">
+                        <a href="detail_livre2.html" ><img src="Livres/Informatique/2.jpg" class="image"  id="idImage"/></a>
+                        <p id="idTitreLivre">Windows10 </p>
+                        <p class="nomAuteur">SERVANE HEUDIARD</p>
+                        <p class="format">Imprimé</p>
+                        <p class="prix">33.95$</p>
+                        <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/2.jpg  width=100 height=100></img>','Windows10 pour les nullissimes'+ '</br></br>'+'<span id=sAuteur>SERVANE HEUDIARD</span></br></br>Posté d\'ici 10 à 20 jours', '1','33.95$');"/>
+                    </td>
+                    <td class="col">
+                        <a href="detail_livre3.html"><img src="Livres/Informatique/3.jpg" alt="" class="image" /> </a>
+                        <p id="idTitreLivre">Linux </p>
+                        <p class="nomAuteur">NICOLAS PONS</p>
+                        <p class="format">Imprimé</p>
+                        <p class="prix">49.95$</p>
+                        <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/3.jpg  width=100 height=100></img>','Linux'+ '</br></br>'+'<span id=sAuteur>NICOLAS PONS</span></br></br>Posté d\'ici 10 à 20 jours', '1','49.95$');"/>
+                    </td>
+                
+                <td class="col">
+                    <a href="detail_livre4.html"><img src="Livres/Informatique/4.jpg" alt="" class="image" /> </a>
+                    <p id="idTitreLivre">Les Réseaux pour les nuls</p>
+                    <p class="nomAuteur">DOUG LOWE</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">41.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/4.jpg  width=100 height=100></img>','Les Réseaux pour les nuls'+ '</br></br>'+'<span id=sAuteur>DOUG LOWE</span></br></br>Posté d\'ici 10 à 20 jours', '1','41.95$');"/>
+                </td>
+                <td class="col">
+                    <a href="detail_livre5.html"><img src="Livres/Informatique/5.jpg" alt=""class="image"  /> </a>
+                    <p id="idTitreLivre">Le Machine learning avec Python</p>
+                    <p class="nomAuteur">SARAH GUIDO</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">59.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/5.jpg  width=100 height=100></img>','Le Machine learning avec Python'+ '</br></br>'+'<span id=sAuteur>SARAH GUIDO</span></br></br>Posté d\'ici 10 à 20 jours', '1','59.95$');"/>
+                </td>
+            <tr class="itemlivresligne2">
+                <td class="col">
+                    <img src="Livres/Informatique/6.jpg" alt="" class="image" /> 
+                    <p id="idTitreLivre">Python</p>
+                    <p class="nomAuteur">APRIL SPEIGHT</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">28.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/6.jpg  width=100 height=100></img>','Découvrir la programmation avec python'+ '</br></br>'+'<span id=sAuteur>APRIL SPEIGHT</span></br></br>Posté d\'ici 10 à 20 jours', '1','28.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/7.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">La 5G pour les nuls</p>
+                    <p class="nomAuteur">DANIEL ICHBIAH</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">24.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/7.jpg  width=100 height=100></img>','La 5G pour les nuls'+ '</br></br>'+'<span id=sAuteur>DANIEL ICHBIAH</span></br></br>Posté d\'ici 10 à 20 jours', '1','24.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/8.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">Zoom pour les nuls</p>
+                    <p class="nomAuteur">PHIL SIMON</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">38.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/8.jpg  width=100 height=100></img>','Zoom pour les nuls'+ '</br></br>'+'<span id=sAuteur>PHIL SIMON</span></br></br>Posté d\'ici 10 à 20 jours', '1','38.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/9.jpg" alt="" class="image" /> 
+                    <p id="idTitreLivre">Java pour les nuls</p>
+                    <p class="nomAuteur">BARRY BURD</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">43.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/9.jpg  width=100 height=100></img>','Java pour les nuls 5e éd'+ '</br></br>'+'<span id=sAuteur>BARRY BURDT</span></br></br>Posté d\'ici 10 à 20 jours', '1','43.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/10.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">Office 2019 complet</p>
+                    <p class="nomAuteur">COLLECTIF</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">79.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/10.jpg  width=100 height=100></img>','Office 2019 complet'+ '</br></br>'+'<span id=sAuteur>COLLECTIF</span></br></br>Posté d\'ici 10 à 20 jours', '1','79.95$');"/>
+                </td>
+            </tr>
+            <tr class="itemlivresligne3">
+                <td class="col">
+                    <img src="Livres/Informatique/11.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">Wordpress </p>
+                    <p class="nomAuteur">LISA SABIN-WILSON</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">41.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/11.jpg  width=100 height=100></img>','Wordpress pour les nuls 4e éd.'+ '</br></br>'+'<span id=sAuteur>LISA SABIN-WILSON</span></br></br>Posté d\'ici 10 à 20 jours', '1','41.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/12.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">La Boîte à outils du SEO</p>
+                    <p class="nomAuteur">BENJAMIN THIERS</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">46.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/12.jpg  width=100 height=100></img>','La Boîte à outils du SEO : référencement naturel'+ '</br></br>'+'<span id=sAuteur>BENJAMIN THIERS</span></br></br>Posté d\'ici 10 à 20 jours', '1','46.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/13.jpg" alt="" class="image" /> 
+                    <p id="idTitreLivre">Windows10 pour les nuls</p>
+                    <p class="nomAuteur">Bernard JOLIVALT</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">28.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/13.jpg  width=100 height=100></img>','Windows10 pour les nuls'+ '</br></br>'+'<span id=sAuteur>Bernard JOLIVALT</span></br></br>Posté d\'ici 10 à 20 jours', '1','28.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/14.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">Ipad ios 13</p>
+                    <p class="nomAuteur">EDWARD C. BAIG, BOB LEVITUS</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">38.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/14.jpg  width=100 height=100></img>','Ipad ios 13 pour les nuls'+ '</br></br>'+'<span id=sAuteur>EDWARD C. BAIG, BOB LEVITUS</span></br></br>Posté d\'ici 10 à 20 jours', '1','38.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/15.jpg" alt="" class="image" /> 
+                    <p id="idTitreLivre">Kotlin</p>
+                    <p class="nomAuteur">LUDOVIC ROLAND</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">49.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/15.jpg  width=100 height=100></img>','Kotlin'+ '</br></br>'+'<span id=sAuteur>LUDOVIC ROLAND</span></br></br>Posté d\'ici 10 à 20 jours', '1','49.95$');"/>
+                </td>
+            </tr>
+        <tr class="itemlivresligne4">
+                <td class="col">
+                    <img src="Livres/Informatique/16.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">Microsoft 365 </p>
+                    <p class="nomAuteur">MYRIAM GRIS</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">29.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/16.jpg  width=100 height=100></img>','Microsoft 365 '+ '</br></br>'+'<span id=sAuteur>MYRIAM GRIS</span></br></br>Posté d\'ici 10 à 20 jours', '1','29.95$');"/>
+                </td>
+                <td class="col"> 
+                    <img src="Livres/Informatique/17.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">Javascript pour les nuls</p>
+                    <p class="nomAuteur">EVA HOLLAND</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">41.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/17.jpg  width=100 height=100></img>','Javascript pour les nuls'+ '</br></br>'+'<span id=sAuteur>EVA HOLLAND</span></br></br>Posté d\'ici 10 à 20 jours', '1','41.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/18.jpg" alt="" class="image" /> 
+                    <p id="idTitreLivre">Linux pour les nuls</p>
+                    <p class="nomAuteur">RICHARD BLUM</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">41.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/18.jpg  width=100 height=100></img>','Linux pour les nuls'+ '</br></br>'+'<span id=sAuteur>RICHARD BLUM</span></br></br>Posté d\'ici 10 à 20 jours', '1','41.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/19.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">Ps adobe photoshop cc 2021</p>
+                    <p class="nomAuteur">CONRAD CHAVEZ</p>
+                    <p class="format">Imprimé</p>
+                    <p class="prix">55.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/19.jpg  width=100 height=100></img>','Ps adobe photoshop cc 2021'+ '</br></br>'+'<span id=sAuteur>CONRAD CHAVEZ</span></br></br>Posté d\'ici 10 à 20 jours', '1','55.95$');"/>
+                </td>
+                <td class="col">
+                    <img src="Livres/Informatique/20.jpg" alt=""class="image"  /> 
+                    <p id="idTitreLivre">Architecture logicielle propre</p>
+                    <p class="nomAuteur">ROBERT C MARTIN</p>
+                    <p class="format">Numérique</p>
+                    <p class="prix">72.95$</p>
+                    <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('<img src= Livres/Informatique/20.jpg  width=100 height=100></img>','Architecture logicielle propre'+ '</br></br>'+'<span id=sAuteur>ROBERT C MARTIN</span></br></br>Posté d\'ici 10 à 20 jours', '1','72.95$');"/>
+                </td>
+            </tr>
+        </table> 
+    </div>
+
+<!--Partie de panier-->
+<div id="zoneContenuFacture">
+    <table  width="60%" align="center" class="table">
+        <thead class="enteteTable">
+          <th colspan="2" >Articles dans votre panier</th>
+          <th >Quantité</th>
+          <th >Prix</th>	
+          <th id='idcaseSupprimer'> &nbsp; &nbsp; &nbsp; &nbsp;</th>
+          <th colspan="4" >Prêt à passer la commande</th>
+        </thead>
+        <tbody id="corpsTableau">
+        </tbody>
+        <tfoot id="piedTableau">
+        </tfoot>
+      </table>
+      <div id="idTotalAvantTaxes"></div>
+      <div id="idTotalApresTaxes"></div>
+
+     <input type="button" class="passerCommande" value="Passer La commande"onclick="affichercaisse();"/>
+</div>
+<!--insertion pied de page---------------> 
+ 
+<footer id="footer">
+    <table class="piedpage">
+      <tr >
+          <td class="ligneAdresse">
+            <img src="img/pointeurmaps.png" class="iconMap"/>
+              <p>Adresse principale: 56 av sainte-Catherine H2&7C2 Montreal</p>
+              <p>Tel: 514222333444</p>
+              <p>Courriel: contact@Brookeetco.ca</p>
+          
+          </td>
+          <td class= "ligneLivraison">
+            <p>Livraison gratuite sans aucun minimum d'achat</p>
+            <img src="img/livraison.png"class="iconlivraison"/>
+          </td>
+          <td class="lignePaiement"> 
+            <p>Paiement sécurisé, nous acceptons</p>
+            <img src="img/visa1.png"class="iconlivraison"/>
+            <img src="img/master2.png"class="iconlivraison"/>
+          </td>
+        </tr>
+    </table>
+  </footer>
+
+</body>
+</html>

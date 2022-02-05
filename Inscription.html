@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="css/Inscription.css"/>
+    <script type="text/javascript" src="js/Inscription.js">
+	</script>
+</head>
+<body onload="document.getElementById('idNom').focus()">
+    <header>
+        <a href="Accueil.html"><img id ="idLogo" src="Logo/logo4.PNG"/></a>
+    </header>
+    <div id="zoneInscription">
+        <h1> Créer votre compte : </h1>
+        
+            <form name="frminscription">
+                <p>
+                    <label for="nom"class="nom">Nom : </label>
+                    <input type="text" id="idNom" name="txtNom" size="42" maxlength="20"/><br/>
+                </p>
+                <p>
+                    <label for="prenom" class="prenom">Prenom: </label>
+                    <input type="text" id="idPrenom" name="txtPrenom" size="42" maxlength="20"/><br/>
+                </p>   
+                        
+                <p>
+                    <label for="Login" class="login">Email: </label>
+                    <input type="text" id="idLogin" name="txtLogin" placeholder="xy@example.com" size="42" maxlength="20"/><br/>
+                </p>
+                <p>
+                    <label for="lblPassword" class="pwd">Mot de passe: </label>
+                    <input type="password" id="idPassword" name="txtPassword"size="42" maxlength="40"/>
+                </p>
+                <p>
+                    <label for="lblConfirmationPassword" class="confirmationPwd">Confirmation mot de passe: </label>
+                    <input type="password" id="idConfirmationPassword" name="txtPassword"size="42" maxlength="40"/>
+                </p>
+                <br/>
+                <p>
+                    <input type="button" value="Valider" onclick="valider();" class="valider">      
+                    <input type="reset" value="Annuler" class="annuler">         
+                </p>
+           
+            </form>
+     
+    </div>
+</body>
+</html>

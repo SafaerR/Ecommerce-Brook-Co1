@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Livre</title>
+    <link rel="stylesheet" href="css/detail_livre2.css"/> 
+    <script type="text/javascript" src="js/detail_livre2.js"></script>
+</head>
+<body onload="masquerzoneContenuFacture();">
+    <div>
+        <a href="Accueil.html"><img src="Logo/logo4.PNG" class="logo"/></a>
+        <form class="barre_recherche">
+            <select id="choix_option">
+                <option value="0"> Choisissez une catégorie</option>
+                <option value="1"> Livres</option>
+                <option value="2"> Films</option>
+                <option value="3"> Jeux video</option>
+              </select>
+              <input type="text" id="idRecherche"placeholder="Mots clés" size="42" maxlength="40"/>
+              <input type="button" id="idGo" value="Go"/>
+          </form>
+      
+          <div id="idpanier" onclick = "afficherPanier();" ondblclick = "afficherZoneContenuItem();"> 
+            <img src="img/PANIER3.jpg" class="panier"/><span id="idItem" class="panier">0</span> 
+          </div>
+          <a href="moncompte.html" class="compte" href="#">Mon compte</a>
+
+<!--   Menu de navigation -->          
+<nav>
+    <ul class="menu">
+      <li>
+          <a href="Livres.html" >Livres</a>    
+      </li>
+      <li>
+          <a href="films.html">Films</a>
+      </li>
+      <li>
+          <a href="jeux.html">Jeux video</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+    </li>
+  </ul>
+    </nav>
+
+
+<!---Affichage de l'image et son detail-->
+<div id="zoneContenuItem">
+      <div class="image">
+        <img src="Livres/Informatique/2.jpg"id="idImage" />
+      </div>
+      <div class="detailImage">
+                  <p id="idTitreLivre">Windows10 pour les nullissimes</p>
+                  <p class="nomAuteur">SERVANE HEUDIARD</p>
+                  <p class="format">Imprimé</p>
+                  <label id="lblprix"> Prix: </label>
+                  <label class="prix"  id="spPrix">33.95$</label><br/><br/>
+                  <label for="quantite" id="lblQte">Quantité: </label> &#160;  &#160; 
+                  <select id="idQuantite" onChange="afficherQuantite();">   
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option> 
+                  </select>  &#160;  &#160;  &#160; 
+                <!---  <a class="supprimer" href="#" onclick="supprimer();">Supprimer</a><br><br><br>-->
+                <input type="button" class="ajouter" value="Ajouter"onclick="ajouterItem('Windows10 pour les nullissimes'+ '</br></br>'+'<span id=sAuteur>SERVANE HEUDIARD</span></br></br>Posté d\'ici 10 à 20 jours', 'idQuantite','33.95$');"/>
+                 
+      </div>
+        <div id="idresume">
+                  <h2> Résumé</h2>
+                  <p>Des conseils pratiques pour se familiariser avec le système d'exploitation Windows 10 </br>et utiliser ses différentes applications. Avec des explications simples et illustrées. </p>
+        </div>
+</div>       
+  <!--Partie de panier-->
+        <div id="zoneContenuFacture">
+            <table  width="70%" align="center" class="table">
+              <thead class="enteteTable">
+                <th >Articles dans votre panier</th>
+                <th >Quantité</th>
+                <th >Prix</th>	
+                <th id="idcaseSupprimer"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th >Prêt à passer la commande</th>
+              </thead>
+              <tbody id="corpsTableau">
+              </tbody>
+              <tfoot id="piedTableau">
+              </tfoot>
+            </table>
+            <div id="idTotalAvantTaxes"></div>
+            <div id="idTotalApresTaxes"></div>
+            <input type="button" class="passerCommande" value="Passer La commande"onclick="affichercaisse();"/>   
+      </div>
+  
+    <!--insertion pied de page---------------> 
+ 
+<footer>
+    <table class="piedpage">
+      <tr >
+          <td class="ligneAdresse">
+            <img src="img/pointeurmaps.png" class="iconMap"/>
+              <p>Adresse principale: 56 av sainte-Catherine H2&7C2 Montreal</p>
+              <p>Tel: 5142223344</p>
+              <p>Courriel: contact@Brookeetco.ca</p>
+          
+          </td>
+          <td class= "ligneLivraison">
+            <p>Livraison gratuite sans aucun minimum d'achat</p>
+            <img src="img/livraison.png"class="iconlivraison"/>
+          </td>
+          <td class="lignePaiement"> 
+            <p>Paiement sécurisé, nous acceptons</p>
+            <img src="img/visa1.png"class="iconlivraison"/>
+            <img src="img/master2.png"class="iconlivraison"/>
+          </td>
+        </tr>
+    </table>
+  </footer>
+</body>
+</html>

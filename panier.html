@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="css/panier.css"/> 
+    <script type="text/javascript" src="js/panier.js"></script>
+</head>
+<body>
+  <div>
+    <a href="Accueil.html"><img src="Logo/logo4.PNG" class="logo"/></a>
+    <form class="barre_recherche">
+        <select id="choix_option">
+            <option value="0"> Choisissez une catégorie</option>
+            <option value="1"> Livres</option>
+            <option value="2"> Films</option>
+            <option value="3"> Jeux video</option>
+          </select>
+          <input type="text" id="idRecherche"placeholder="Mots clés" size="42" maxlength="40"/>
+          <input type="button" id="idGo" value="Go"/>
+      </form>
+      <a class="compte" href="#">Mon compte</a>
+      <img src="img/PANIER3.jpg" class="panier"/>
+</div>
+ <!--   Menu de navigation -->          
+ <nav>
+  <ul class="menu">
+    <li>
+        <a href="Livres.html" >Livres</a>    
+    </li>
+    <li>
+        <a href="films.html">Films</a>
+    </li>
+    <li>
+        <a href="jeux.html">Jeux video</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact</a>
+  </li>
+</ul>
+  </nav>
+  <!--tableau de panier-->
+  <div id="zoneContenuFacture">
+    <table  width="50%" align="center" class="table">
+      <thead class="enteteTable">
+        <th>Articles dans votre panier</th>
+        <th>Quantité</th>
+        <th>Prix</th>	
+        <th > &#160; &#160; &#160; &#160; &#160; &#160;&#160; &#160; &#160;&#160; &#160; &#160;    </th>
+        <th >Pret a passer la commande</th>				
+      </thead>
+      <tbody id="corpsTableau">
+      </tbody>
+      <tfoot id="piedTableau">
+        <tr>
+            <th> </th>
+            <th> </th>
+            <th> </th>
+        </tr>
+        <tr>
+            <th> </th>
+            <th> </th>
+        </tr>
+      </tfoot>
+    </table>
+    <div id="idTotalAvantTaxes"> Sous-Total: </div>
+    <div id="idTotalApresTaxes"> Total: </div>
+  </div>
+<!--insertion pied de page---------------> 
+ 
+<footer>
+    <table class="piedpage">
+      <tr >
+          <td class="ligneAdresse">
+            <img src="img/pointeurmaps.png" class="iconMap"/>
+              <p>Adresse principale: 56 av sainte-Catherine H2&7C2 Montreal</p>
+              <p>Tel: 514222333444</p>
+              <p>Courriel: contact@Brookeetco.ca</p>
+          
+          </td>
+          <td class= "ligneLivraison">
+            <p>Livraison gratuite sans aucun minimum d'achat</p>
+            <img src="img/livraison.png"class="iconlivraison"/>
+          </td>
+          <td class="lignePaiement"> 
+            <p>Paiement sécurisé, nous acceptons</p>
+            <img src="img/visa1.png"class="iconlivraison"/>
+            <img src="img/master2.png"class="iconlivraison"/>
+          </td>
+        </tr>
+    </table>
+  </footer>
+</body>
+</html>

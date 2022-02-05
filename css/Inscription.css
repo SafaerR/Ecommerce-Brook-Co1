@@ -1,0 +1,121 @@
+#idLogo{
+    background-color: white;
+    position: relative;
+      width:13%;
+      left: 0px;
+      margin:0px;
+}
+h1{
+    position: relative;
+    top:-20px;
+    bottom:10px;
+    text-align: center;
+    font-size: 29pt;
+    color:#137DC5 ;
+    
+}
+#zoneInscription{
+    position: relative;
+    text-align:center;
+    top: -30px;
+}
+.nom{
+    color: #137DC5;
+  font-size: 12pt;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  padding-right: 50px;
+}
+.prenom{
+    color: #137DC5;
+    font-size: 12pt;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    padding-right: 50px;
+}
+.login{
+    color: #137DC5;
+    font-size: 12pt;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    padding-right: 50px;
+}
+.pwd{
+    color: #137DC5;
+    font-size: 12pt;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    padding-right: 40px;
+    margin-left:-50px;
+}
+.confirmationPwd{
+    color: #137DC5;
+    font-size: 12pt;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    padding-right: 50px;
+    margin-left:-162px;
+}
+#idNom{
+    height:25px;
+    border:#137DC5 1px solid;
+    width:26%;
+    margin-left: 0px;
+    margin-right: 0px;
+  
+}
+
+#idPrenom{
+    height:25px;
+    border:#137DC5 1px solid;
+    width:26%;
+    margin-left: -14px;
+    margin-right: 0px;
+  
+}
+#idLogin{
+    height:25px;
+    border:#137DC5 1px solid;
+    width:26%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#idPassword{
+    height:25px;
+    border:#137DC5 1px solid;
+    width:26%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#idConfirmationPassword{
+    height:25px;
+    border:#137DC5 1px solid;
+    width:26%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.valider{
+  background-color: #f3953e;
+  position: relative;
+  height:30px;
+  width:11%;
+  left: 30px;
+  top:0px;
+  text-align: center;
+  color: white;
+  font-size:13pt;
+  font-weight: bold;
+}
+.annuler{
+    background-color: #f3953e;
+    position: relative;
+    height:30px;
+    width:10%;
+    left: 70px;
+    top:0px;
+    text-align: center;
+    color: white;
+    font-size:13pt;
+    font-weight: bold;
+}
+

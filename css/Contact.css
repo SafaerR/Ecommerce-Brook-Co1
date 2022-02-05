@@ -1,0 +1,157 @@
+.pubLivraison{
+    text-align: center;
+    font-size: 11pt;
+    width: 30px;
+}
+.banniere{
+    position: relative;
+    width:205px;
+    left:0;
+    top: 30px;
+    height:1070px;
+}
+.ligneAdresse{
+    text-align: center;
+    color: #fff;    
+}
+
+.logo{
+    position: relative;
+    width:12%;
+    height: 140px;
+    top:-10px;
+    left:0px;
+    margin:0px;
+}
+.barre_recherche{
+    position: relative;
+    width:60%;
+    left: 160px;
+    top:-80px; 
+    right:0px;
+}
+#choix_option{
+    width:200px;
+    height: 40px;
+}
+#idRecherche{
+    width: 460px;
+    height: 35px;
+}
+#idGo{
+    width: 60px;
+    height: 38px;
+    background-color:#f3953e;
+    color: white;
+    font-weight: bold;
+    font-size:13pt;
+    border:rgb(150, 150, 150) solid 1px
+}
+.compte{
+    position:relative;
+    width:200px;
+    left:899px;
+    top:-135px;
+    padding: 15px;
+}
+.panier{
+    position:relative;
+    width:50px;
+    left:900px;
+    top:-125px;
+}
+.menu {
+    position:relative;
+    display: flex;              /* Transformation en flexbox */
+    padding:0; 
+    background-color: #0388e0d2;  
+    justify-content: center;
+    top:-165px;
+    width:100%;
+    font-size: 13pt;
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+.menu a {
+        display:block;                /* Transformation en block */
+        min-width: 100px;             /* Largeur minimale des liens */   
+        margin: 0.5rem;               /* Marges externes */
+        padding: 0.2rem 0;            /* Marges internes */
+        text-align: center;           /* Centrage du texte */   
+        color: #fff;                  /* Couleur du texte */
+        text-decoration: none;        /* Suppression du soulignement */
+        transition: all 1s ;          /* Ajout des effets de transition */
+}
+body {
+    font-family: "Trebuchet MS";
+}
+.ligneLivraison{
+    position:relative;
+    TOP:15px;
+    text-align: center;
+    color: #fff;
+}
+.lignePaiement{
+    position: relative;
+    text-align: center; 
+    top:15px;
+    color: #fff;
+}
+.iconMap{
+    position: relative;
+    width:30px;
+    left:-230px;
+    top:33px;
+
+}
+.iconlivraison{
+    position: relative;
+    top:0px;
+    left:0px;  
+    width:60px;
+    padding:3px;
+}
+.piedpage{
+position: relative;
+background-color: #0388e0d2;
+width:100%;
+
+}
+#idItem{
+    position:relative;
+    width:50px;
+    left:870px;
+    top:-150px; 
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    right: 0px;;
+}
+#idconstruction{
+  position: absolute;
+  width: 50%;
+  left:400px;
+  top:150px;
+}
+.compte{
+    position: relative;
+    left:950px;
+    top:-160px;
+}
+nav ul li a:hover{
+    color:rgb(95, 94, 94);
+} 
+nav ul li a:hover{
+    color:rgb(95, 94, 94);
+    box-shadow: 2px 2px 10px -2px rgba(0,0,0,.35);
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 #ef816c;
+      font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}

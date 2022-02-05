@@ -1,0 +1,206 @@
+.logo{
+    position: relative;
+    width:12%;
+    height: 140px;
+    top:-10px;
+    left:0px;
+    margin:0px;
+}
+.barre_recherche{
+    position: relative;
+    width:60%;
+    left: 160px;
+    top:-80px; 
+    right:0px;
+}
+#choix_option{
+    width:200px;
+    height: 40px;
+}
+#idRecherche{
+    width: 460px;
+    height: 35px;
+}
+#idGo{
+    width: 60px;
+    height: 38px;
+    background-color:#f3953e;
+    color: white;
+    font-weight: bold;
+    font-size:13pt;
+}
+.compte{
+    position:relative;
+    width:200px;
+    left:899px;
+    top:-135px;
+    padding: 15px;
+}
+.panier{
+    position:relative;
+    width:50px;
+    left:900px;
+    top:-125px;
+}
+.menu {
+    position:relative;
+    display: flex;              /* Transformation en flexbox */
+    padding:0; 
+    background-color: #0388e0d2;  
+    justify-content: center;
+    top:-145px;
+    width:100%;
+    font-size: 13pt;
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+.menu a {
+        display:block;                /* Transformation en block */
+        min-width: 100px;             /* Largeur minimale des liens */   
+        margin: 0.5rem;               /* Marges externes */
+        padding: 0.2rem 0;            /* Marges internes */
+        text-align: center;           /* Centrage du texte */   
+        color: #fff;                  /* Couleur du texte */
+        text-decoration: none;        /* Suppression du soulignement */
+        transition: all 1s ;          /* Ajout des effets de transition */
+}
+body {
+    font-family: "Trebuchet MS";
+}
+.menu_vertical{
+    background-color: #f3953e;
+    width:200px;
+    height:450px;
+    position:absolute;
+    top:165px;
+    color:#fff;
+}
+.nav{
+ 
+    width: 108px;
+    height:100px;
+}
+nav ul li a:hover{
+    color:rgb(95, 94, 94);
+} 
+.menu_vertical li {
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .menu_vertical ul li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+
+.menu_vertical ul li a {
+   
+    padding-bottom: 5px;
+    width: 198px;
+    box-sizing: border-box;
+   
+}
+ul {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height */
+  }
+.menu_vertical a {
+    display:block;                /* Transformation en block */
+    min-width: 100px;             /* Largeur minimale des liens */   
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.2rem 0;            /* Marges internes */        /* Centrage du texte */   
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu_vertical li:first-child{
+    font-size:17pt;
+    text-align: left;
+    padding-bottom: 24px;
+}
+.magasinecategorie{
+    font-size:14pt;
+    text-align:center;
+    padding-bottom: 40px;
+    color:rgb(241, 241, 76);
+
+}
+.pubLivraison{
+    text-align: center;
+    font-size: 12pt;
+    width: 180px;
+    margin-top:35px
+}
+
+.ligneAdresse{
+    text-align: center;
+    color: #fff;    
+}
+.ligneLivraison{
+    position:relative;
+    TOP:15px;
+    text-align: center;
+    color: #fff;
+}
+.lignePaiement{
+    position: relative;
+    text-align: center; 
+    top:15px;
+    color: #fff;
+}
+.iconMap{
+    position: relative;
+    width:30px;
+    left:-230px;
+    top:33px;
+
+}
+.iconlivraison{
+    position: relative;
+    top:0px;
+    left:0px;  
+    width:60px;
+    padding:3px;
+}
+.piedpage{
+position: absolute;
+background-color: #0388e0d2;
+width:100%;
+
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+     width: 100%;
+ }
+ #idconstruction{
+    position: absolute;
+    width: 50%;
+    left:400px;
+    top:180px;
+  }
+  .compte{
+    position: relative;
+    left:950px;
+    top:-160px;
+}
+#idItem{
+    position:relative;
+    width:50px;
+    left:870px;
+    top:-155px; 
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:rgb(95, 94, 94);
+    box-shadow: 2px 2px 10px -2px rgba(0,0,0,.35);
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 #ef816c;
+      font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
